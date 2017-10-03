@@ -65,8 +65,8 @@ app.use((err, _req, res, _next) => {
   }
 
   // eslint-disable-next-line no-console
-  console.error(err.stack);
-  res.sendStatus(500);
+  // console.error(err.stack);
+  // res.sendStatus(500);
 });
 
 const port = process.env.PORT || 8000;
@@ -74,7 +74,7 @@ const port = process.env.PORT || 8000;
 app.listen(port, () => {
   if (app.get('env') !== 'test') {
     // eslint-disable-next-line no-console
-    console.log('Listening on port', port);
+    // console.log('Listening on port', port);
   }
 });
 
